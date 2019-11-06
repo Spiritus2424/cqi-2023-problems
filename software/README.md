@@ -1,4 +1,4 @@
-# Examen CS Games 2019 - Web (10 points)
+# Examen CS Games 2019 - Ingénierie logicielle
 
 Par Julien Dufresne
 
