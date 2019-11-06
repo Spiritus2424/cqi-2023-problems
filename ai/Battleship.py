@@ -83,7 +83,7 @@ class BattleshipBoard:
 
         if ship_id_at_pos is not "":
             ship_at_pos = self.__ships[ship_id_at_pos]
-            ship_at_pos.hit_count += 1
+            ship_at_pos._hit_count += 1
             self.hit_grid[row][col] = HitStatus.SUNK if ship_at_pos.is_sunk() else HitStatus.HIT
         else:
             self.hit_grid[row][col] = HitStatus.MISS
