@@ -4,11 +4,11 @@
 
 #include "Song.h"
 
-class GreatSong : Song {
+class GreatSong : public Song {
 public:
     GreatSong(const std::string &name, const std::string &lyrics);
 
-    std::string sing() const override;
+    std::string sing() const;
 };
 
 
