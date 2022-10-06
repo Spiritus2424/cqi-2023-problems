@@ -1,5 +1,5 @@
-#ifndef CSGAMES_EXAM_2019_DEBUG_KARAOKE_H
-#define CSGAMES_EXAM_2019_DEBUG_KARAOKE_H
+#ifndef PRE_CQI_2023_DEBUG_KARAOKE_H
+#define PRE_CQI_2023_DEBUG_KARAOKE_H
 
 #include "../song/Song.h"
 #include "../singer/Singer.h"
@@ -23,4 +23,4 @@ private:
 };
 
 
-#endif //CSGAMES_EXAM_2019_DEBUG_KARAOKE_H
+#endif //PRE_CQI_2023_DEBUG_KARAOKE_H

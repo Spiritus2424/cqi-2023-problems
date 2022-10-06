@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(CSGAMES_EXAM_2019_DEBUG)
+project(PRE_CQI_2023_DEBUG)
 
 set(CMAKE_CXX_STANDARD 11)
 

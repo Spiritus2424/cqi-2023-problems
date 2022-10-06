@@ -1,4 +1,4 @@
-include_directories (${CSGAMES_EXAM_2019_DEBUG_SOURCE_DIR}/src)
+include_directories (${PRE_CQI_2023_DEBUG_SOURCE_DIR}/src)
 
 FILE(GLOB TEST_SOURCES *.cpp)
 
