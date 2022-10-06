@@ -146,7 +146,7 @@ SCENARIO("Karaoke") {
                 initialSongs.push_back(&s3);
                 initialSongs.push_back(&s4);
 
-                REQUIRE_THAT(songs, Equals(initialSongs));
+                REQUIRE(songs == initialSongs);
 
             }
             
