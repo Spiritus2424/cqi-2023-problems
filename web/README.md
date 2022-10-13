@@ -1,96 +1,88 @@
-# Examen CS Games 2019 - Web (10 points)
+# Pré-CQI 2022 - Web (10 points)
 
-Par Julien Dufresne
+ *(for english, check README_EN.md in this folder)* 
+
+**NOTE**: Il y a des similarités avec le défi mobile, mais ce n'est pas 100% identique, portez attention.
 
 ## Mise en situation
 
-Polytechnique vous met au défi de rendre le dossier étudiant *great again*. Le défi est de grande envergure! Le dossier étudiant est désuait depuis sa création il y plus de 10 ans maintenant.
+Le Potato Cloud Fest vous confie le mandat de rebâtir leur site web *from scratch*! C'est une ressource importante pour tous les gens qui veulent se renseigner sur le festival. On veut un beau design qui va convaincre ceux qui considèrent y aller de s'acheter un billet, et donner hâte à ceux qui ont déjà le leur.
+
 
 ## Technologie
 
 Vous êtes libre d'utiliser les technologies que vous désirez. On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
 
-On vous conseille d'utiliser Angular, mais bon si vous voulez faire de la sorcellerie avec autre chose, c'est correct aussi.
+[todo] suggerer des frameworks?
 
-## Authentification (1 point)
-
-On va être honnête ici, les mots de passes de 8 caractères maximum (et minimum ¯\\_(ツ)_/¯), c'est pas ce qu'il y a de plus sécuritaire. C'est pourquoi nous avons décidé d'augmenter le nombre de caractère à 25! Pas plus, pas moins. 25.
-
-La page d'authentification doit contenir:
-- Le logo de Poly
-- Input pour le code d'accès
-- Input pour le mot de passe (oubliez pas le fameux 25)
-- Input pour la date de naissance (Pour pouvoir voler ton identité plus facilement)
-- Le bouton "Connexion" est laisser à votre discrétion (ou pas)
-
-## Page principale (1 point)
-
-Nous avons discuter longuement avec notre équipe de design (on a presque bruler tout le budget avec eux...) et nous en sommes venu à la conclusion que l'application les boutons de la page principale du dossier étudiant actuel sera remplacé par une navbar. Par défaut, nous aimerions avoir un gif de bienvenue afin que l'étudiant honête se sent à la maison.
+## Page principale (2 points)
 
 La page principale doit contenir:
-- Un navbar avec les différents menu possible
-    - Renseignements personnels
-    - Bulletin cumulatif / Notes du trimestre courrant
-    - Horaire personnel
-    - Proposition de choix de cours
-    - Attestation dee fréquentation scolaire
-    - Dossier financier
-- Par défaut, affichier un gif savoureux qui rendera votre correcteur heureux!
 
-## Page des renseignements personnels (2 points)
+- Les dates du festival (26-29 janvier 2023)
+- Lieu du festival (todo ?)
+- Le logo du festival
+- Un menu avec ces différentes options*:
+    - Billeterie
+    - Programmation
+    - Infos pratiques
+    - FAQ
+    - Nous joindre
+- Un décompte jusqu'au début de l'événement (26 janvier 2023)
 
-Cette page permet à l'étudiant de fournir ses informations personnels afin de permettre à Poly d'être vulnérable à des cyber attaques. Mais n'ayez aucune crainte, ce n'est arrivé qu'une seule fois (j'pense)
+*Vous pouvez modifier le titre des sections pour les rendre plus courts/catchy, soyez créatif/ves!
 
-La page des renseignements personnels doit contenir:
-- Section permettant la modification des informations confidentielles (if you know what I mean)
-    - Nouveau mot de passe
-    - Confirmation du nouveau mot de passe
-    - Ancien mot de passe
-    - Numéro d'assurance sociale
-- Section permettant la modification des coordonnées
-    - Adresse
-    - Adresse (suite)
-    - Ville
-    - Province
-    - Pays
-    - Code postal
-    - Tél. domicile
-- Section permettant la modification du nom de votre mère à la naissance
+## Page des tarifs/billeterie (2 points)
+
+Cette page a pour but de montrer aux utilisateurs les différentes options de billets pour l'événement et d'ajouter une option à un panier d'achat. On ne vous demande pas d'implémenter la section pour compléter l'achat.
+
+La page des tarifs doit contenir:
+- La liste des différents billets et bundles qui peuvent être achetés (consultez le document `tickets.txt`). Pour chaque option:
     - Nom
-    - Prénom
-- Section permettant la modification du nom de votre employeur
-    - Nom de l'employeur
-    - Tél. travail
-    - Poste
-- Section permettant la modification du nom de la personne a contacter en cas d'urgence
+    - Prix
+    - Description
+    - Bouton pour ajouter au panier
+- Panier d'achat qui contient les éléments ajoutés
+    - Note: pas besoin de l'intégrer au menu comme la plupart des sites, il peut être seulement sur cette page-là
+
+## Page de la programmation (3 points)
+
+Cette page permet aux visiteurs du site de consulter l'horaire complet.
+
+La page de la programmation doit contenir:
+- Une/des grille(s) de l'horaire du festival (consultez le document ``schedule.txt`.txt`). Vous choisissez comment organiser les données (par date, lieu, type, etc.)
+- Chaque événement dans ``schedule.txt`.txt`, intégré à la grille
     - Nom
-    - Prénom
-    - Lien de parenté
-    - Tél. domicile
-    - Tél. travail
-    - Poste
-- Section permettant la modification du l'adresse des parents
-    - Adresse
-    - Adresse (suite)
-    - Ville
-    - Province
-    - Pays
-    - Code postal
+    - Date et heure
+    - Lieu
+    - Type
+- Lorsqu'on clique sur un événement dans la grille, un popup contenant
+    - Nom, date, heure, lieu, type
+    - Description brève
 
-## Page de l'horaire personnel (3 points)
+## Page FAQ (2 points)
 
-Nous vous demandons ici d'être un peu créatif et de rendre ça beau. Notre équipe de design nous a dit que la veille version était laide (un peu oué).
+La page FAQ doit contenir:
+- Minimum 10 questions (total) séparées en 3 sections
+    - Par exemple, les sections:
+        - Objets permis/interdits
+        - Accès au site
+        - Vente et livraison des billets
+- Un lien vers la page Nous joindre
 
-La page de l'horaire personnel doit contenir:
-- La liste des cours avec
-    - Sigle
-    - Nom complet
-    - Groupe théorique
-    - Groupe laboratoire
-    - Nombre de crédits
-- Horaire détaillé
-    - Mettez moi ça beau
+Vous pouvez inventer les questions, réponses et sections. Vous ne serez pas notés sur le contenu.
 
-## Page de proposition de choix de cours (3 points)
+## Page Nous joindre (1 point)
 
-Nous avons décidé d'être révolutionnaire de permettre au étudatian de créer son horaire! Cette page est donc semblable à la page de l'horaire personnel, à l'exception que l'étudiant peut *drag and drop* les cours qu'ils désirent dans son horaire.
+La page Nous joindre doit montrer aux visiteurs du site les différentes option pour contacters le comité organisateur du festival.
+
+La page Nous joindre doit contenir:
+- Coordonnées des organisateurs
+    - Téléphone
+    - Adresse postale
+    - Adresse courriel
+- Section pour envoyer un message
+    - Input pour nom
+    - Input pour courriel
+    - Input pour téléphone
+    - Input pour message
