@@ -1,39 +1,68 @@
-import { Component, OnInit } from '@angular/core';
-import Axios from "axios";
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { catchError, Observable, throwError } from 'rxjs';
 
-interface IHealthcheck {
+
+interface Healthcheck {
   alive: boolean
 }
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  title = 'client';
+export class AppComponent {
+  title = 'Pré-CQI 2023';
   serverBaseUrl = 'http://localhost:3000'
   mongoOk = false;
   serverOk = false;
 
+  constructor(private readonly _httpClient: HttpClient) { }
+
   ngOnInit(): void {
-    Axios.get<IHealthcheck>(this.serverBaseUrl + '/healthcheck')
-      .then(response => {
-        // handle success
-        this.serverOk = response.data.alive;
-      })
-      .catch( error => {
-        // handle error
-        console.log(error);
+    this._httpClient.get<Healthcheck>(`${this.serverBaseUrl}/healthcheck`)
+      .pipe(catchError(this.handleServerError))
+      .subscribe((response: Healthcheck) => {
+        this.serverOk = response.alive;
       });
-    Axios.get<IHealthcheck>(this.serverBaseUrl + 'mongo')
-      .then(response => {
-        // handle success
-        this.mongoOk = response.status == 200;
-      })
-      .catch( error => {
-        // handle error
-        this.mongoOk = false;
+
+    this._httpClient.get<boolean>(`${this.serverBaseUrl}/mongo`)
+      .pipe(catchError(this.handleMongoError))
+      .subscribe((response: boolean) => {
+        this.mongoOk = response;
       });
+  }
+
+  private handleServerError(error: HttpErrorResponse): Observable<never> {
+    this.serverOk = false;
+
+    if (error.status === 0) {
+      // A client-side or network error occurred. Handle it accordingly.
+      console.error('An error occurred:', error.error);
+    } else {
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong.
+
+      console.error(
+        `Backend returned code ${error.status}, body was: `, error.error);
+    }
+    return throwError(() => new Error('Something bad happened; please try again later.'));
+  }
+
+  private handleMongoError(error: HttpErrorResponse): Observable<never> {
+    this.mongoOk = false;
+
+    if (error.status === 0) {
+      // A client-side or network error occurred. Handle it accordingly.
+      console.error('An error occurred:', error.error);
+    } else {
+      // The backend returned an unsuccessful response code.
+      // The response body may contain clues as to what went wrong.
+
+      console.error(
+        `Backend returned code ${error.status}, body was: `, error.error);
+    }
+    return throwError(() => new Error('Something bad happened; please try again later.'));
   }
 }
