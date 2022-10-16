@@ -1,6 +1,6 @@
 # Pré-CQI - Ingénierie logicielle
 
-## Réponse 2
+## Réponse 2 - Git (1 points)
 
 a) git show <commit-id> `(0.2 point)`
 

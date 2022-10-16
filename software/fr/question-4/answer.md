@@ -1,6 +1,6 @@
 # Pré-CQI - Ingénierie logicielle
 
-## Réponse 4
+## Réponse 4 - Analyse quantitative de processus (3 points)
 
 a) Le cycle de vie utilisé semble être un cycle de vie incrémental, avec une itération aux quatre semaines. On note un travail sur les exigences à chaque quatre semaine, suivi d’un travail sur le design (dans les semaines qui en font), suivi d’un travail en implémentation, suivi d’un travail sur les tests (dans les semaines qui en font). Cela correspond à des itérations de style cascade correspondant au modèle incrémental. `(1 points)`
 

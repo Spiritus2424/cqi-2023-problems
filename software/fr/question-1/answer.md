@@ -1,10 +1,11 @@
 # Pré-CQI - Ingénierie logicielle
 
-## Réponse 1
+## Réponse 1 - Développement Logiciel (2 points)
+
 
 a) Option b) `(0.4 points)`
 
-b) Les tests unitaires détectent les problèmes dans une composante. Les tests d'intégration détectent les problèmes lors de l'intéraction entre plusieurs composantes. Oui les tests unitaires et les tests d'intégration sont des tests de régression, parce que si nous modifions du code, les tests unitaires et d'intégration vont détecter être en mesure de déterminer si le code fonctionne toujours. (0.2 points)
+b) Les tests unitaires détectent les problèmes dans une composante. Les tests d'intégration détectent les problèmes lors de l'intéraction entre plusieurs composantes. Oui les tests unitaires et les tests d'intégration sont des tests de régression, parce que si nous modifions du code, les tests unitaires et d'intégration vont détecter être en mesure de déterminer si le code fonctionne toujours. `(0.2 points)`
 
 c) `(0.4 points)`
     
