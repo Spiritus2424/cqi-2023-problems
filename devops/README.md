@@ -64,3 +64,4 @@ ou vous pouvez vous fier au message *Mongo is connected* affiché lors du rafrai
 
 
 Modifiez au besoin la variable `databaseUrl` de `server/src/database.provider.ts` pour assurer la connexion.
+
