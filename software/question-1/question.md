@@ -48,9 +48,7 @@ c) Qu'est ce qu'un Infrastructure as a Service (IaaS), Plateform as a service (P
 
 d) Expliquez les similarités et les différences entre Infrastructure-as-Code et Pipeline-as-Code.
 
-e) Le PDG de l’application web Allume-Feu voudrait déterminer s’il vaut la peine de varier l’interface graphique de l’application basée sur le sexe de l’utilisateur. Par exemple, il voudrait faire des expériences
-avec différents schémas de couleurs ou avec une différente mise-en-page. Pour permettre de faire ça, le
-PDG hésite entre quatres stratégies de déploiement/mise en production moderne, c.-à-d. les stratégies "Blue-Green", "Rolling",  "Canari" et "A/B".
+e) Le PDG de l’application web PotatoFest voudrait déterminer s’il vaut la peine de varier l’interface graphique de l’application basée sur le sexe de l’utilisateur. Par exemple, il voudrait faire des expériences avec différents schémas de couleurs ou avec une différente mise-en-page. Pour permettre de faire ça, le PDG hésite entre quatres stratégies de déploiement/mise en production moderne, c.-à-d. les stratégies "Blue-Green", "Rolling",  "Canari" et "A/B".
 
-Comme ingénieur de mise en production de Allume-Feu, expliquez clairement à votre PDG
+Comme ingénieur de mise en production de PotatoFest, expliquez clairement à votre PDG
 qu'elle serait la meilleure stratégie à prendre entre les quatres stratégies.
