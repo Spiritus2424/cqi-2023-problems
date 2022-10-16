@@ -49,4 +49,4 @@ The team with the lowest average will directly have `10 points`. The rest of the
 
 The total out of 10 points is calculated as follows:
 
-$$ Total = {NbrAverageLap_{team}\over NbrAverageLap_{best team}} * 10 $$
+$$ Total =  NbrAverageLap_{best team} \over {NbrAverageLap_{team}} * 10 $$

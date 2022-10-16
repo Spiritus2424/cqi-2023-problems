@@ -1,6 +1,5 @@
 # Pré CQI 2023 - Système d'exploitation (10 points)
 
-
 ## Mise en situation
 
 Vous travailler dans une firme qui produit un logiciel de montage vidéo. Votre application fonctionne super bien, mais vos utilisateurs remarques que certain traitement prenne énormément de temps. Vous décidez donc d'utiliser les ressources actuelles des ordinateurs et d'essayer de paralléliser le traitement sur les différents coeurs disponibles sur le CPU.

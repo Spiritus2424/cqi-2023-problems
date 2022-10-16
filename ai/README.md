@@ -49,6 +49,6 @@ L'équipe avec la moyenne la plus petite aura directement `10 points`. Le reste 
 
 Le total sur 10 points est calculé ainsi :
 
-$$ Total = {NbrTourMoyen_{équipe}\over NbrTourMoyen_{meilleur équipe}} * 10 $$
+$$ Total = {NbrTourMoyen_{meilleur équipe} \over NbrTourMoyen_{équipe}} * 10 $$
 
 
