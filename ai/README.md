@@ -47,8 +47,8 @@ $ python3 Main.py <nombre de partie>
 
 L'équipe avec la moyenne la plus petite aura directement `10 points`. Le reste des équipes auront un pointage pondéré à la meilleure équipe.
 
-Le total sur 10 points pour les billes récoltées est calculé ainsi :
+Le total sur 10 points est calculé ainsi :
 
-$$ Total = {NbrTourMoyen_{équipe}\over NbrTourMoyen_{meilleur équipe}} * 45 $$
+$$ Total = {NbrTourMoyen_{équipe}\over NbrTourMoyen_{meilleur équipe}} * 10 $$
 
 
