@@ -1,48 +1,54 @@
-# Examen CS Games 2019 - AI
-Par Philippe Rivest
+# Pré CQI 2023 - Intelligence Artificielle (10 points)
 
 ## Mise en situation
 
-Vous savez comme moi que certains examens à Polytechnique requièrent autant de connaissances que de chance pour une bonne réussite.
-Pour vous exercer, vous décidez de jouer à un jeu qui nécessite le même mélange de joyeux hasards et de savoir: **Le BATTLESHIP**.
-Puisque vous êtes paresseux et vous connaissez un peu le Python, vous décidez de faire un Bot qui jouera à votre place. Si seulement ce même résonnement s'appliquait aux exams... 😿
+Votre supérieur amène son enfant au travail et vous demande de l'occuper pendant quelques heures. Il vous dit que son enfant est un grand fan du jeu de société **BATTLESHIP**. Vous n'êtes pas très à l'aise avec les enfants et vous n'aimez pas jouer à **BATTLESHIP**, mais vous adorez programmer. 
 
-## Battleship pour les nuls
+Vous décidez donc de préparer une intelligence artificielle pour jouer contre son enfant. Il est très important d'avoir une intelligence artificielle capable de gagner rapidement sinon l'enfant découvrira la supercheri et vous dénonncera à son père!!
 
-Cinq navires de largeur 1 et de longueur variable sont disposés secrètement sur une grille de taille 10x10.
-À chaque tour, vous devez énoncer une case où vous soupçonnez la présente d'une partie d'un navire quelconque.
-Vous saurez immédiatement s'il s'agit d'un tir réussi (touché), d'un tir manqué (dans l'eau lololol rip) ou d'un tir fatal (coulé).
-Vous gagnez si vous faites couler tous les navires adverses. **Veuillez noter qu'il s'agit d'une version à un joueur de Battleship. Votre but est d'écrire une IA qui minimise le nombre de tous requis pour faire couler les navires.**
+## Logiciel
+- Python 3.7+
+
+## Règlement - Battleship pour les nuls
+
+Il aura **5 navires de largeur 1 et de longueur variable**. Ils seront disposés secrètement sur **une grille de taille 10x10**. À chaque tour, vous devez énoncer une case où vous soupçonnez la présence d'une partie d'un navire quelconque. Vous saurez immédiatement s'il s'agit d'un tir réussi (*HIT*), d'un tir manqué (*MISS*) ou d'un tir fatal (*SUNK*).
+
+Vous gagnez si vous faites couler tous les navires adverses.
+
+```Veuillez noter qu'il s'agit d'une version à un joueur de Battleship. Votre but est d'écrire une IA qui minimise le nombre de tour requis pour faire couler les navires.```
 
 ## Instructions
 
-**Ne pas modifier autre chose que `Bot.py` SINON VOUS ÊTES COUPÉS**
+**Ne pas modifier autre chose que `Bot.py`**
 
 * Vous devez implanter la méthode `do_turn` de `Bot.py`;
 * Cette dernière doit retourner une paire (tuple) ayant:
     * Première composante: la lettre de la colonne désirée (A à J)
     * Deuxième composante: l'index de la rangée désirée (\[0, 9\])
 * Vous pouvez ajouter des attributs à la classe `Bot` comme vous voulez
-* GL;HF
 
 ## Évaluation
 
 Vous serez évalués en fonction de la moyenne du nombre de tours requis pour couler tous les navires.
 
-* Si votre bot prend plus que 90 tours à faire couler tous les navires, l'exécution est stoppée ✂✂✂
-* Si votre bot est capable de battre le jeu en moins de 20 tours, j'appelle les inquisiteurs espagnols!
+```Si votre bot prend plus que 90 tours à faire couler tous les navires, l'exécution est stoppée ✂✂✂```
 
 ## Remise
 
 Vous devez remettre le fichier `Bot.py`, tout simplement.
 
-## Dépendances
-
-Python 3.7+ avec aucun module supplémentaire
-
-*L'exam a été fait sous 3.7.5. Je pense que ça ne peut pas fonctionner en dessous de 3.6.*
-
 ## Exécuter
-```shell script
-python3 Main.py
+Pour exécuter le programme vous pouvez rouler la commande ci-dessous. Vous pouvez également rajouter un argument qui indique le nombre de partie à jouer et calculer la moyenne à par rapport 
 ```
+$ python3 Main.py <nombre de partie>
+```
+
+## Points
+
+L'équipe avec la moyenne la plus petite aura directement `10 points`. Le reste des équipes auront un pointage pondéré à la meilleure équipe.
+
+Le total sur 10 points pour les billes récoltées est calculé ainsi :
+
+$$ Total = {NbrTourMoyen_{équipe}\over NbrTourMoyen_{meilleur équipe}} * 45 $$
+
+

@@ -1,4 +1,4 @@
-# Pré CQI 2023 - Système d'exploitation
+# Pré CQI 2023 - Système d'exploitation (10 points)
 
 
 ## Mise en situation
@@ -27,9 +27,9 @@ Vous travailler dans une firme qui produit un logiciel de montage vidéo. Votre 
   * Contient une implémentation simple d'une file permettant la lecture/écriture par plusieurs noeuds d'éxécution. Ces structures et fonctions sont fortement recommandé lors de l'implémentation du pipeline utilisant pthreads.
 * `source/pipeline-serial.c`
   * Contient une implémentation sérielle de référence du pipeline.
-* `source/pipeline-pthread.c` **(À COMPLÉTER)**
+* `source/pipeline-pthread.c` **(À COMPLÉTER)** **(5 POINTS)**
   * Contient l'implémentation parallèle demandée du pipeline à l'aide de pthread
-* `source/pipeline-tbb.cpp` **(À COMPLÉTER)**
+* `source/pipeline-tbb.cpp` **(À COMPLÉTER)** **(5 POINTS)**
   * Contient l'implémentation parallèle demandée du pipeline à l'aide de TBB
 * `data/fetch.sh`
   * Contient un script pour télécharger les images de test.
@@ -84,3 +84,4 @@ $ mkdir build && cd build && cmake .. // Générer le makefile dans le dossier b
 $ make run-all                        // Compiler et executer les 3 algorithmes
 $ ../data/check.sh                    // Vérifier si toutes les images créées sont identiques
 ```
+
