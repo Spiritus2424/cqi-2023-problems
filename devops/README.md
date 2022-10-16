@@ -1,5 +1,4 @@
-# Pré CQI 2023 - DevOps
-Par Ahmad Faour
+# Pré CQI 2023 - DevOps (10 points)
 
 ## Mise en situation
 
@@ -65,4 +64,3 @@ ou vous pouvez vous fier au message *Mongo is connected* affiché lors du rafrai
 
 
 Modifiez au besoin la variable `databaseUrl` de `server/src/database.provider.ts` pour assurer la connexion.
-
