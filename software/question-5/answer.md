@@ -1,19 +1,19 @@
 # Pré-CQI - Ingénierie logicielle
 
-## Question 5 - Choix de cycle de vie (2 points)
+## Réponse 5 - Choix de cycle de vie (2 points)
 
-a) Incrémental ou Cascade `(0.2 points)`
+a) 
 
-b) Spirale `(0.2 points)`
+b) 
 
-c) Incrémental ou Cascade  `(0.2 points)`
+c) 
 
-d) Incrémental  `(0.2 points)`
+d) 
 
-e) Spirale  `(0.2 points)`
+e)
 
-f) Transformationnel  `(0.2 points)`
+f) 
 
-g) Cascade ou Incrémental  `(0.2 points)`
+g) 
 
-h) Cascade  `(0.2 points)`
+h) 

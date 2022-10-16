@@ -1,6 +1,4 @@
-# Pré-CQI 2023 - Ingénierie logicielle
-
-Par Ahmad Faour
+# Pré-CQI 2023 - Ingénierie logicielle (10 points)
 
 ## Mise en situation
 
