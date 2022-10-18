@@ -1,7 +1,7 @@
 <a id="top"></a>
 # Data Generators
 
-> Introduced in Catch 2.6.0.
+> Introduced in Catch2 2.6.0.
 
 Data generators (also known as _data driven/parametrized test cases_)
 let you reuse the same set of assertions across different input values.
@@ -12,22 +12,87 @@ are run once per each value in a generator.
 This is best explained with an example:
 ```cpp
 TEST_CASE("Generators") {
-    auto i = GENERATE(1, 2, 3);
-    SECTION("one") {
-        auto j = GENERATE( -3, -2, -1 );
-        REQUIRE(j < i);
-    }
+    auto i = GENERATE(1, 3, 5);
+    REQUIRE(is_odd(i));
 }
 ```
 
-The assertion in this test case will be run 9 times, because there
-are 3 possible values for `i` (1, 2, and 3) and there are 3 possible
-values for `j` (-3, -2, and -1).
+The "Generators" `TEST_CASE` will be entered 3 times, and the value of
+`i` will be 1, 3, and 5 in turn. `GENERATE`s can also be used multiple
+times at the same scope, in which case the result will be a cartesian
+product of all elements in the generators. This means that in the snippet
+below, the test case will be run 6 (2\*3) times.
 
+```cpp
+TEST_CASE("Generators") {
+    auto i = GENERATE(1, 2);
+    auto j = GENERATE(3, 4, 5);
+}
+```
 
 There are 2 parts to generators in Catch2, the `GENERATE` macro together
 with the already provided generators, and the `IGenerator<T>` interface
 that allows users to implement their own generators.
+
+
+## Combining `GENERATE` and `SECTION`.
+
+`GENERATE` can be seen as an implicit `SECTION`, that goes from the place
+`GENERATE` is used, to the end of the scope. This can be used for various
+effects. The simplest usage is shown below, where the `SECTION` "one"
+runs 4 (2\*2) times, and `SECTION` "two" is run 6 times (2\*3).
+
+```cpp
+TEST_CASE("Generators") {
+    auto i = GENERATE(1, 2);
+    SECTION("one") {
+        auto j = GENERATE(-3, -2);
+        REQUIRE(j < i);
+    }
+    SECTION("two") {
+        auto k = GENERATE(4, 5, 6);
+        REQUIRE(i != k);
+    }
+}
+```
+
+The specific order of the `SECTION`s will be "one", "one", "two", "two",
+"two", "one"...
+
+
+The fact that `GENERATE` introduces a virtual `SECTION` can also be used
+to make a generator replay only some `SECTION`s, without having to
+explicitly add a `SECTION`. As an example, the code below reports 3
+assertions, because the "first" section is run once, but the "second"
+section is run twice.
+
+```cpp
+TEST_CASE("GENERATE between SECTIONs") {
+    SECTION("first") { REQUIRE(true); }
+    auto _ = GENERATE(1, 2);
+    SECTION("second") { REQUIRE(true); }
+}
+```
+
+This can lead to surprisingly complex test flows. As an example, the test
+below will report 14 assertions:
+
+```cpp
+TEST_CASE("Complex mix of sections and generates") {
+    auto i = GENERATE(1, 2);
+    SECTION("A") {
+        SUCCEED("A");
+    }
+    auto j = GENERATE(3, 4);
+    SECTION("B") {
+        SUCCEED("B");
+    }
+    auto k = GENERATE(5, 6);
+    SUCCEED();
+}
+```
+
+> The ability to place `GENERATE` between two `SECTION`s was [introduced](https://github.com/catchorg/Catch2/issues/1938) in Catch2 2.13.0.
 
 ## Provided generators
 
@@ -49,12 +114,12 @@ a test case,
 * 4 specific purpose generators
   * `RandomIntegerGenerator<Integral>` -- generates random Integrals from range
   * `RandomFloatGenerator<Float>` -- generates random Floats from range
-  * `RangeGenerator<T>` -- generates all values inside an arithmetic range
+  * `RangeGenerator<T>(first, last)` -- generates all values inside a `[first, last)` arithmetic range
   * `IteratorGenerator<T>` -- copies and returns values from an iterator range
 
-> `ChunkGenerator<T>`, `RandomIntegerGenerator<Integral>`, `RandomFloatGenerator<Float>` and `RangeGenerator<T>` were introduced in Catch 2.7.0.
+> `ChunkGenerator<T>`, `RandomIntegerGenerator<Integral>`, `RandomFloatGenerator<Float>` and `RangeGenerator<T>` were introduced in Catch2 2.7.0.
 
-> `IteratorGenerator<T>` was introduced in Catch 2.10.0.
+> `IteratorGenerator<T>` was introduced in Catch2 2.10.0.
 
 The generators also have associated helper functions that infer their
 type, making their usage much nicer. These are
@@ -74,11 +139,11 @@ type, making their usage much nicer. These are
 * `from_range(InputIterator from, InputIterator to)` for `IteratorGenerator<T>`
 * `from_range(Container const&)` for `IteratorGenerator<T>`
 
-> `chunk()`, `random()` and both `range()` functions were introduced in Catch 2.7.0.
+> `chunk()`, `random()` and both `range()` functions were introduced in Catch2 2.7.0.
 
-> `from_range` has been introduced in Catch 2.10.0
+> `from_range` has been introduced in Catch2 2.10.0
 
-> `range()` for floating point numbers has been introduced in Catch X.Y.Z
+> `range()` for floating point numbers has been introduced in Catch2 2.11.0
 
 And can be used as shown in the example below to create a generator
 that returns 100 odd random number:
@@ -111,7 +176,7 @@ scope and thus capturing references is dangerous. If you need to use
 variables inside the generator expression, make sure you thought through
 the lifetime implications and use `GENERATE_COPY` or `GENERATE_REF`.**
 
-> `GENERATE_COPY` and `GENERATE_REF` were introduced in Catch 2.7.1.
+> `GENERATE_COPY` and `GENERATE_REF` were introduced in Catch2 2.7.1.
 
 You can also override the inferred type by using `as<type>` as the first
 argument to the macro. This can be useful when dealing with string literals,

@@ -1,5 +1,5 @@
-#ifndef CSGAMES_EXAM_2019_DEBUG_SINGER_H
-#define CSGAMES_EXAM_2019_DEBUG_SINGER_H
+#ifndef PRE_CQI_2023_DEBUG_SINGER_H
+#define PRE_CQI_2023_DEBUG_SINGER_H
 
 #include <string>
 #include "../song/Song.h"
@@ -16,4 +16,4 @@ private:
 };
 
 
-#endif //CSGAMES_EXAM_2019_DEBUG_SINGER_H
+#endif //PRE_CQI_2023_DEBUG_SINGER_H

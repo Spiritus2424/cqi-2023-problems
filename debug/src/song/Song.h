@@ -1,5 +1,5 @@
-#ifndef CSGAMES_EXAM_2019_DEBUG_SONG_H
-#define CSGAMES_EXAM_2019_DEBUG_SONG_H
+#ifndef PRE_CQI_2023_DEBUG_SONG_H
+#define PRE_CQI_2023_DEBUG_SONG_H
 
 #include <string>
 #include <vector>
@@ -18,4 +18,4 @@ protected:
 };
 
 
-#endif //CSGAMES_EXAM_2019_DEBUG_SONG_H
+#endif //PRE_CQI_2023_DEBUG_SONG_H

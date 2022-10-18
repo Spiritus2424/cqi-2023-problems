@@ -1,11 +1,7 @@
 <a id="top"></a>
 # Authoring benchmarks
 
-> [Introduced](https://github.com/catchorg/Catch2/issues/1616) in Catch 2.9.0.
-
-_Note that benchmarking support is disabled by default and to enable it,
-you need to define `CATCH_CONFIG_ENABLE_BENCHMARKING`. For more details,
-see the [compile-time configuration documentation](configuration.md#top)._
+> [Introduced](https://github.com/catchorg/Catch2/issues/1616) in Catch2 2.9.0.
 
 Writing benchmarks is not easy. Catch simplifies certain aspects but you'll
 always need to take care about various aspects. Understanding a few things about
@@ -15,7 +11,8 @@ First off, let's go over some terminology that will be used throughout this
 guide.
 
 - *User code*: user code is the code that the user provides to be measured.
-- *Run*: one run is one execution of the user code.
+- *Run*: one run is one execution of the user code. Sometimes also referred
+  to as an _iteration_.
 - *Sample*: one sample is one data point obtained by measuring the time it takes
   to perform a certain number of runs. One sample can consist of more than one
   run if the clock available does not have enough resolution to accurately
@@ -168,7 +165,7 @@ Note that it is not possible to simply use the same instance for different runs
 and resetting it between each run since that would pollute the measurements with
 the resetting code.
 
-It is also possible to just provide an argument name to the simple `BENCHMARK` macro to get 
+It is also possible to just provide an argument name to the simple `BENCHMARK` macro to get
 the same semantics as providing a callable to `meter.measure` with `int` argument:
 
 ```c++
@@ -189,19 +186,17 @@ construct and destroy objects without dynamic allocation and in a way that lets
 you measure construction and destruction separately.
 
 ```c++
-BENCHMARK_ADVANCED("construct")(Catch::Benchmark::Chronometer meter)
-{
+BENCHMARK_ADVANCED("construct")(Catch::Benchmark::Chronometer meter) {
     std::vector<Catch::Benchmark::storage_for<std::string>> storage(meter.runs());
     meter.measure([&](int i) { storage[i].construct("thing"); });
-})
+};
 
-BENCHMARK_ADVANCED("destroy", [](Catch::Benchmark::Chronometer meter)
-{
+BENCHMARK_ADVANCED("destroy")(Catch::Benchmark::Chronometer meter) {
     std::vector<Catch::Benchmark::destructable_object<std::string>> storage(meter.runs());
     for(auto&& o : storage)
         o.construct("thing");
     meter.measure([&](int i) { storage[i].destruct(); });
-})
+};
 ```
 
 `Catch::Benchmark::storage_for<T>` objects are just pieces of raw storage suitable for `T`
