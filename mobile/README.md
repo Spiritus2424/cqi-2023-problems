@@ -10,7 +10,9 @@ Le Potato Cloud Fest vous confie le mandat de créer une app pour améliorer l'e
 
 ## Technologie
 
-Vous devez développer l'application avec la technologie que vous voulez, tant que vous pouvez faire une démo à la fin (sur un simulateur ou un téléphone). On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
+Vous devez développer l'application avec un SDK natif, donc iOS ou Android (pas de React Native ou équivalent). Vous devez pouvoir faire une démo à la fin (sur un simulateur ou un téléphone).
+
+On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
 
 ## Authentification (2 points)
 
@@ -24,21 +26,18 @@ La page d'authentification doit minimalement contenir:
 
 ## Page d'accueil (2 points)
 
-[todo]  
 La page d'accueil doit contenir:
 
-- Les dates du festival (26-29 janvier 2023)
+- Les dates du festival (26-27 janvier 2023)
 - Lieu du festival (todo ?)
 - Le logo du festival
-- Un navbar avec les différentes options de menu*:
+- Un navbar avec les différentes options de menu:
     - Renseignements personnels
     - Programmation
     - Horaire personnalisé
     - Infos pratiques
     - Nous joindre
 - Un décompte jusqu'au début de l'événement (26 janvier 2023)
-
-*Vous pouvez modifier le titre des sections pour les rendre plus courts/catchy, soyez créatif/ves!
 
 ## Page des renseignements personnels (2 points)
 
@@ -76,13 +75,17 @@ La page des renseignements personnels doit contenir:
 
 Cette page permet aux participant.e.s de consulter l'horaire qu'ils auront bâti à partir de la programmation complète. En d'autres mots, imaginez que l'utilisateur peut consulter la programmation entière et sélectionner des événements pour se créer un aide-mémoire d'où aller, quand. Vous n'avez *pas* à faire la partie de la programmation, juste l'horaire personnalisé.
 
+Les événements qui composeront l'horaire sont donnés dans `schedule.csv`. Vous pouvez *parse* les données comme vous voulez (si ça vous tente de recopier à la main vous pouvez aussi), pas besoin de traduire les lieu et types d'événements.
+
+(*NOTE: La première ligne du CSV représente le nom des colonnes, le reste ce sont les données.*)
+
 La page de l'horaire personnel doit contenir:
-- Une grille de l'horaire des dates du festival (26-29 janvier)
-- Les événements choisis par l'utilisateur dans la grille (choisissez en **minimum** 5 dans `schedule.txt`)
+- Une grille de l'horaire des dates du festival (26-27 janvier)
+- Les événements choisis par l'utilisateur dans la grille
     - Nom
     - Date et heure
     - Lieu
     - Type
 - Lorsqu'on tappe sur un événement dans la grille, un popup contenant
     - Nom, date, heure, lieu, type
-    - Description brève
+    - Description brève (vous pouvez l'inventer ou mettre un placeholder, on ne vous notera pas là dessus)

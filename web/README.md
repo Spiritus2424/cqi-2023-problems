@@ -19,7 +19,7 @@ Vous êtes libre d'utiliser les technologies que vous désirez. On vous demande 
 
 La page principale doit contenir:
 
-- Les dates du festival (26-29 janvier 2023)
+- Les dates du festival (26-27 janvier 2023)
 - Lieu du festival (todo ?)
 - Le logo du festival
 - Un menu avec ces différentes options*:
@@ -36,8 +36,10 @@ La page principale doit contenir:
 
 Cette page a pour but de montrer aux utilisateurs les différentes options de billets pour l'événement et d'ajouter une option à un panier d'achat. On ne vous demande pas d'implémenter la section pour compléter l'achat.
 
+Les types de billets disponibles sont dans `tickets.json`.
+
 La page des tarifs doit contenir:
-- La liste des différents billets et bundles qui peuvent être achetés (consultez le document `tickets.txt`). Pour chaque option:
+- La liste des différents billets et bundles qui peuvent être achetés (`tickets.json`). Pour chaque option:
     - Nom
     - Prix
     - Description
@@ -49,16 +51,20 @@ La page des tarifs doit contenir:
 
 Cette page permet aux visiteurs du site de consulter l'horaire complet.
 
+Les événements de la programmation sont donnés dans `schedule.csv`. Vous choisissez comment *parse* les données (si ça vous tente de recopier à la main vous pouvez aussi), et pas besoin de traduire les lieu et types d'événements.
+    
+(*NOTE: La première ligne du CSV représente le nom des colonnes, le reste ce sont les données.*)
+
 La page de la programmation doit contenir:
-- Une/des grille(s) de l'horaire du festival (consultez le document ``schedule.txt`.txt`). Vous choisissez comment organiser les données (par date, lieu, type, etc.)
-- Chaque événement dans ``schedule.txt`.txt`, intégré à la grille
+- Une/des grille(s) qui montrent l'horaire du festival (`schedule.csv`). Vous choisissez comment organiser les données (par date, lieu, type, etc.)
+- Chaque événement dans `schedule.csv`, intégré à la grille
     - Nom
     - Date et heure
     - Lieu
     - Type
 - Lorsqu'on clique sur un événement dans la grille, un popup contenant
     - Nom, date, heure, lieu, type
-    - Description brève
+    - Description brève (vous pouvez l'inventer ou mettre un placeholder, on ne vous notera pas là dessus)
 
 ## Page FAQ (2 points)
 
