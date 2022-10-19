@@ -44,7 +44,7 @@ To jusge a submission for the debugging competition, there are a few prerequisit
   * A c++ compiler, for example: **gcc**, **clang**, **MSCV (Visual Studio)**
   * **cmake**
 
-## Calculation of points
+## Calculating Points
 
 This challenge is worth 10 points. To calculate these points, follow these steps.
 
