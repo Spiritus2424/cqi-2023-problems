@@ -1,6 +1,7 @@
 # Pré-CQI - Ingénierie logicielle
 
 ## Réponse 3 - Mauvaises odeurs (2 points)
+
 a) `(1 points)` Faites un pourcentage de <bonne réponse>/<Total de réponse> * 1
 | Ligne     | Erreur                                                                                 |
 | --------- | -------------------------------------------------------------------------------------- |

@@ -1,4 +1,4 @@
-#include <catch2/catch.hpp>
+#include <catch2/catch_test_macros.hpp>
 #include <karaoke/Karaoke.h>
 #include <song/GreatSong.h>
 #include <song/BoringSong.h>
@@ -146,7 +146,7 @@ SCENARIO("Karaoke") {
                 initialSongs.push_back(&s3);
                 initialSongs.push_back(&s4);
 
-                REQUIRE_THAT(songs, Equals(initialSongs));
+                REQUIRE(songs == initialSongs);
 
             }
             

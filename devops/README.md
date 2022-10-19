@@ -1,5 +1,4 @@
-# Pré CQI 2023 - DevOps
-Par Ahmad Faour
+# Pré CQI 2023 - DevOps (10 points)
 
 ## Mise en situation
 

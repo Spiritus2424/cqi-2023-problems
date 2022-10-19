@@ -1,4 +1,4 @@
-#include <catch2/catch.hpp>
+#include <catch2/catch_test_macros.hpp>
 #include <singer/Singer.h>
 #include <song/BoringSong.h>
 #include <singer/FrenchSinger.h>

@@ -1,4 +1,4 @@
-#define CSGAMES_EXAM_2019_DEBUG_FRENCHSINGER_H
+#define PRE_CQI_2023_DEBUG_FRENCHSINGER_H
 
 
 #include "Singer.h"
