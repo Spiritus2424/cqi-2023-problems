@@ -30,7 +30,7 @@ cmake --build .
 ### Éxécution des tests
 ```shell script
 # Dans le dossier build
-./test/csgames_2020_debug_test
+./test/karaoke_test
 ```
 
 ## Remise
@@ -66,7 +66,7 @@ cmake --build .
 ### Running the tests
 ```shell script
 # In the build directory
-./test/csgames_2020_debug_test
+./test/karaoke_test
 ```
 
 ## Delivery
