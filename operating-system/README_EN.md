@@ -1,8 +1,8 @@
-# Pre CQI 2023 - Operating System (10 points)
+# Pre CQI 2023 - Operating System - 10 pts
 
-## Scenario
+## Context
 
-You work in a firm that produces video editing software. Your application works great, but your users notice that some processing takes a lot of time. You therefore decide to use the current resources of the computers and try to parallelize the processing on the different cores available on the CPU.
+The Operating System challenge serves to evaluate your competencies related to Operating systems, mon particularly, parallelism. You will have to accelerate the execution of a video editing program with the help of parallelism.
 
 ## Software Required
 - Linux
@@ -14,6 +14,7 @@ You work in a firm that produces video editing software. Your application works 
 
 ## Delivery
 1. Use the `make remise` command
+2. Submit the `remise.zip` file
 
 ## Code provided
 * `source/main.c`
