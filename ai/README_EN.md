@@ -1,12 +1,12 @@
-# Pre CQI 2023 - Artificial Intelligence (10 points)
+# Pre QEC 2023 - Artificial Intelligence (10 points)
 
 ## Scenario
 
-Your superior brings his child to work and asks you to occupy him for a few hours. He tells you that his child is a big fan of the board game **BATTLESHIP**. You're not very good with children and you don't like to play **BATTLESHIP**, but you love programming.
+The Potato Cloud Fest CEO says he wants to find a way to keep his kid busy when he brings him to work in the weeks leading up to the festival. He tells you that his child is a big fan of the board game **BATTLESHIP**. You're not very good with children and you don't like to play **BATTLESHIP**, but you love programming.
 
-So you decide to prepare an artificial intelligence to play against his child. It is very important to have an artificial intelligence capable of winning quickly otherwise the child will discover the trick and denounce you to his father!!
+To do him a favor while demonstrating your programming skills, you decide to prepare an artificial intelligence to play against his child. It is very important to have an artificial intelligence capable of winning quickly otherwise the child will discover the deception and his father will have to find a new way to keep him busy!
 
-## Software
+## Required Software
 -Python 3.7+
 
 ## Rules - Battleship For Dummies

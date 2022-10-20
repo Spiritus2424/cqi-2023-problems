@@ -1,96 +1,100 @@
-# Examen CS Games 2019 - Web (10 points)
+# Pré CQI 2023 - Design Web (10 points)
 
-Par Julien Dufresne
+ *(for english, check README_EN.md in this folder)* 
 
+**NOTE**: Il y a des similarités avec le défi mobile, mais ce n'est pas 100% identique, portez attention.
 ## Mise en situation
 
-Polytechnique vous met au défi de rendre le dossier étudiant *great again*. Le défi est de grande envergure! Le dossier étudiant est désuait depuis sa création il y plus de 10 ans maintenant.
+Le Potato Cloud Fest veut confier à une équipe le mandat de rebâtir leur site web *from scratch*! C'est une ressource importante pour tous les gens qui veulent se renseigner sur le festival. On veut un beau design qui va convaincre ceux qui considèrent y aller de s'acheter un billet, et donner hâte à ceux qui ont déjà le leur.
 
-## Technologie
+Vous devez construire un site pour leur montrer vos talents en design web.
 
-Vous êtes libre d'utiliser les technologies que vous désirez. On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
+## Logiciel Requis
 
-On vous conseille d'utiliser Angular, mais bon si vous voulez faire de la sorcellerie avec autre chose, c'est correct aussi.
+Il n'y a pas de logiciel obligatoire, vous êtes libres d'utiliser les technologies que vous désirez (par exemple Angular, React, Vue, ...).
 
-## Authentification (1 point)
+On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
 
-On va être honnête ici, les mots de passes de 8 caractères maximum (et minimum ¯\\_(ツ)_/¯), c'est pas ce qu'il y a de plus sécuritaire. C'est pourquoi nous avons décidé d'augmenter le nombre de caractère à 25! Pas plus, pas moins. 25.
+## Remise
 
-La page d'authentification doit contenir:
-- Le logo de Poly
-- Input pour le code d'accès
-- Input pour le mot de passe (oubliez pas le fameux 25)
-- Input pour la date de naissance (Pour pouvoir voler ton identité plus facilement)
-- Le bouton "Connexion" est laisser à votre discrétion (ou pas)
+1. Vous devrez faire une démo de votre site web aux juges (donc leur montrer chaque partie détaillée plus bas)
+2. Vous devez remettre des screenshots de votre design
+3. Vous devez remettre une copie de votre code source
 
-## Page principale (1 point)
-
-Nous avons discuter longuement avec notre équipe de design (on a presque bruler tout le budget avec eux...) et nous en sommes venu à la conclusion que l'application les boutons de la page principale du dossier étudiant actuel sera remplacé par une navbar. Par défaut, nous aimerions avoir un gif de bienvenue afin que l'étudiant honête se sent à la maison.
+## Instructions
+### **Page principale** (2 points)
 
 La page principale doit contenir:
-- Un navbar avec les différents menu possible
-    - Renseignements personnels
-    - Bulletin cumulatif / Notes du trimestre courrant
-    - Horaire personnel
-    - Proposition de choix de cours
-    - Attestation dee fréquentation scolaire
-    - Dossier financier
-- Par défaut, affichier un gif savoureux qui rendera votre correcteur heureux!
 
-## Page des renseignements personnels (2 points)
+- Les dates du festival (26-27 janvier 2023)
+- Lieu du festival (Montréal)
+- Le logo du festival (votre choix)
+- Un menu avec ces différentes options*:
+    - Billeterie
+    - Programmation
+    - Infos pratiques
+    - FAQ
+    - Nous joindre
+- Un décompte jusqu'au début de l'événement (26 janvier 2023)
 
-Cette page permet à l'étudiant de fournir ses informations personnels afin de permettre à Poly d'être vulnérable à des cyber attaques. Mais n'ayez aucune crainte, ce n'est arrivé qu'une seule fois (j'pense)
+### **Page des tarifs/billeterie** (2 points)
 
-La page des renseignements personnels doit contenir:
-- Section permettant la modification des informations confidentielles (if you know what I mean)
-    - Nouveau mot de passe
-    - Confirmation du nouveau mot de passe
-    - Ancien mot de passe
-    - Numéro d'assurance sociale
-- Section permettant la modification des coordonnées
-    - Adresse
-    - Adresse (suite)
-    - Ville
-    - Province
-    - Pays
-    - Code postal
-    - Tél. domicile
-- Section permettant la modification du nom de votre mère à la naissance
+Cette page a pour but de montrer aux utilisateurs les différentes options de billets pour l'événement et d'ajouter un billet à un panier d'achat. On ne vous demande pas d'implémenter la section pour compléter l'achat.
+
+Les types de billets disponibles sont dans `tickets.json`.
+
+La page des tarifs doit contenir:
+- La liste des différents billets et bundles qui peuvent être achetés (`tickets.json`). Pour chaque option:
     - Nom
-    - Prénom
-- Section permettant la modification du nom de votre employeur
-    - Nom de l'employeur
-    - Tél. travail
-    - Poste
-- Section permettant la modification du nom de la personne a contacter en cas d'urgence
+    - Prix
+    - Description
+    - Bouton pour ajouter au panier
+- Panier d'achat qui contient les éléments ajoutés
+
+### **Page de la programmation** (3 points)
+
+Cette page permet aux visiteurs du site de consulter l'horaire complet.
+
+Les événements de la programmation sont donnés dans `schedule.csv`. Vous choisissez comment *parse* les données (si ça vous tente de recopier à la main vous pouvez aussi), et pas besoin de traduire les lieu et types d'événements.
+    
+(*NOTE: La première ligne du CSV représente le nom des colonnes, le reste ce sont les données.*)
+
+La page de la programmation doit contenir:
+- Une/des grille(s) qui montrent l'horaire du festival (`schedule.csv`). Vous choisissez comment organiser les données (par date, lieu, type, etc.)
+- Chaque événement dans `schedule.csv`, intégré à la grille
     - Nom
-    - Prénom
-    - Lien de parenté
-    - Tél. domicile
-    - Tél. travail
-    - Poste
-- Section permettant la modification du l'adresse des parents
-    - Adresse
-    - Adresse (suite)
-    - Ville
-    - Province
-    - Pays
-    - Code postal
+    - Date et heure
+    - Lieu
+    - Type
+- Lorsqu'on clique sur un événement dans la grille, une façon de visualiser (section qui *expand*, dialog, popup, popover, etc)
+    - Nom, date, heure, lieu, type
+    - Description brève (vous pouvez l'inventer ou mettre un placeholder, on ne vous notera pas là dessus)
 
-## Page de l'horaire personnel (3 points)
+### **Page FAQ** (2 points)
+La page FAQ, comme son nom le dit, sert à répondre aux questions des utilisateurs. Le design doit permettre de rapidement trouver une question et accéder à sa réponse.
 
-Nous vous demandons ici d'être un peu créatif et de rendre ça beau. Notre équipe de design nous a dit que la veille version était laide (un peu oué).
+La page FAQ doit contenir:
+- Minimum 10 questions (total) séparées en 3 sections
+    - Par exemple, les sections:
+        - Objets permis/interdits
+        - Accès au site
+        - Vente et livraison des billets
+- Un lien vers la page Nous joindre
 
-La page de l'horaire personnel doit contenir:
-- La liste des cours avec
-    - Sigle
-    - Nom complet
-    - Groupe théorique
-    - Groupe laboratoire
-    - Nombre de crédits
-- Horaire détaillé
-    - Mettez moi ça beau
+Vous pouvez inventer les questions, réponses et sections. Vous ne serez pas notés sur le contenu.
 
-## Page de proposition de choix de cours (3 points)
+### **Page Nous joindre** (1 point)
 
-Nous avons décidé d'être révolutionnaire de permettre au étudatian de créer son horaire! Cette page est donc semblable à la page de l'horaire personnel, à l'exception que l'étudiant peut *drag and drop* les cours qu'ils désirent dans son horaire.
+La page Nous joindre doit montrer aux visiteurs du site les différentes option pour contacters le comité organisateur du festival.
+
+La page Nous joindre doit contenir:
+- Coordonnées des organisateurs
+    - Téléphone
+    - Adresse postale
+    - Adresse courriel
+- Section pour envoyer un message
+    - Input pour nom
+    - Input pour courriel
+    - Input pour téléphone
+    - Input pour message
+    - Bouton envoyer (pas fonctionnel)

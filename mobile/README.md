@@ -1,50 +1,63 @@
-# Examen CS Games 2019 - Web (10 points)
+# Pré-CQI 2023 - Design Mobile (10 points)
 
-Par Julien Dufresne
+ *(for english, check README_EN.md in this folder)*
 
+ **NOTE**: Il y a des similarités avec le défi web, mais ce n'est pas 100% identique, portez attention.
+ 
 ## Mise en situation
 
-Polytechnique vous met au défi de rendre le dossier étudiant *great again*. Le défi est de grande envergure! Personne n'a jamais oser créer une application mobile pour notre magnifique dossier érudiant!
+Le Potato Cloud Fest veut savoir si vous êtes la bonne équipe pour bâtir une app qui améliorera l'expérience de ses festivalier.e.s! C'est une plateforme où les clients pourront se créer un compte, consulter les infos sur l'événement, bâtir un horaire de ce à quoi ils veulent assister, etc.
 
-## Technologie
+Vous créez donc une version *lite* de l'application pour leur montrer vos *skills* de mobile.
 
-Vous devez développer l'application avec les SDK natif, Android ou iOS. On ne veut pas voir de Ionic, React Native, Flutterr ou autre. On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
+## Logiciel Requis
 
-## Authentification (2 point)
+Il n'y a pas de logiciel requis pour ce défi, mais vous devez développer l'application avec un SDK natif, donc iOS ou Android (pas de React Native ou équivalent).
 
-On va être honnête ici, les mots de passes de 8 caractères maximum (et minimum ¯\\_(ツ)_/¯), c'est pas ce qu'il y a de plus sécuritaire. C'est pourquoi nous avons décidé d'augmenter le nombre de caractère à 25! Pas plus, pas moins. 25.
+Vous devez pouvoir faire une démo à la fin (sur un simulateur ou un téléphone).
 
-La page d'authentification doit contenir:
-- Le logo de Poly
-- Input pour le code d'accès
-- Input pour le mot de passe (oubliez pas le fameux 25)
-- Input pour la date de naissance (Pour pouvoir voler ton identité plus facilement)
-- Le bouton "Connexion" est laisser à votre discrétion (ou pas)
+On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
 
-## Page principale (2 point)
+## Remise
+1. Vous devrez faire une démo de votre application aux juges (donc leur montrer chaque partie détaillée plus bas)
+2. Vous devez remettre des screenshots de votre design
+3. Vous devez remettre une copie de votre code source
 
-Nous avons discuter longuement avec notre équipe de design (on a presque bruler tout le budget avec eux...) et nous en sommes venu à la conclusion que l'application les boutons de la page principale du dossier étudiant actuel sera remplacé par une navbar. Par défaut, nous aimerions avoir un gif de bienvenue afin que l'étudiant honête se sent à la maison.
+## Instructions
+### **Authentification** (2 points)
 
-La page principale doit contenir:
-- Un navbar avec les différents menu possible
+La page d'authentification doit minimalement contenir:
+- Le logo du festival (à votre discrétion!)
+- Input pour le courriel
+- Input pour le mot de passe (minimum 10 caractères)
+- Liens ou boutons vers (n'ont pas à être fonctionnels)
+    - Créer un compte
+    - Mot de passe oublié
+
+### **Page d'accueil** (2 points)
+
+La page d'accueil doit contenir:
+
+- Les dates du festival (26-27 janvier 2023)
+- Lieu du festival (Montréal)
+- Le logo du festival
+- Un navbar avec les différentes options de menu:
     - Renseignements personnels
-    - Bulletin cumulatif / Notes du trimestre courrant
-    - Horaire personnel
-    - Proposition de choix de cours
-    - Attestation dee fréquentation scolaire
-    - Dossier financier
-- Par défaut, affichier un gif savoureux qui rendera votre correcteur heureux!
+    - Programmation
+    - Horaire personnalisé
+    - Infos pratiques
+    - Nous joindre
+- Un décompte jusqu'au début de l'événement (26 janvier 2023)
 
-## Page des renseignements personnels (2 points)
+### **Page des renseignements personnels** (2 points)
 
-Cette page permet à l'étudiant de fournir ses informations personnels afin de permettre à Poly d'être vulnérable à des cyber attaques. Mais n'ayez aucune crainte, ce n'est arrivé qu'une seule fois (j'pense)
+Cette page permet aux festivalier.e.s d'entrer leurs renseignements et leurs préférences. Ces infos peuvent ensuite être utilisées pour gérer des urgences, des objets perdus, des concours, etc.
 
 La page des renseignements personnels doit contenir:
-- Section permettant la modification des informations confidentielles (if you know what I mean)
+- Section permettant la modification des informations confidentielles
     - Nouveau mot de passe
     - Confirmation du nouveau mot de passe
     - Ancien mot de passe
-    - Numéro d'assurance sociale
 - Section permettant la modification des coordonnées
     - Adresse
     - Adresse (suite)
@@ -52,39 +65,37 @@ La page des renseignements personnels doit contenir:
     - Province
     - Pays
     - Code postal
-    - Tél. domicile
-- Section permettant la modification du nom de votre mère à la naissance
+    - Téléphone
+- Section permettant la modification d'un contact d'urgence
     - Nom
     - Prénom
-- Section permettant la modification du nom de votre employeur
-    - Nom de l'employeur
-    - Tél. travail
-    - Poste
-- Section permettant la modification du nom de la personne a contacter en cas d'urgence
-    - Nom
-    - Prénom
-    - Lien de parenté
-    - Tél. domicile
-    - Tél. travail
-    - Poste
-- Section permettant la modification du l'adresse des parents
-    - Adresse
-    - Adresse (suite)
-    - Ville
-    - Province
-    - Pays
-    - Code postal
+    - Téléphone
+    - Lien avec la personne
+- Section permettant la modification d'infos de santé  
+    - Allergies/intolérances
+    - Problèmes de santé connus
+    - Médicaments
+- Section permettant la modification de ses préférences
+    - Fréquence des courriels promo
+        - Jamais, 1/mois, 1/semaine, 1/jour 
+    - Grandeur de tshirt
+- Bouton pour sauvegarder
 
-## Page de l'horaire personnel (4 points)
+### **Page de l'horaire personnalisé** (4 points)
 
-Nous vous demandons ici d'être un peu créatif et de rendre ça beau. Notre équipe de design nous a dit que la version web était laide (un peu oué).
+Cette page permet aux participant.e.s de consulter l'horaire qu'ils auront bâti à partir de la programmation complète. En d'autres mots, imaginez que l'utilisateur peut consulter la programmation entière et sélectionner des événements pour se créer un aide-mémoire d'où aller, quand. Vous n'avez *pas* à faire la partie de la programmation, juste montrer l'horaire personnalisé.
+
+Les événements qui composeront l'horaire sont donnés dans `schedule.csv`. Vous pouvez *parse* les données comme vous voulez (si ça vous tente de recopier à la main vous pouvez aussi), pas besoin de traduire les lieu et types d'événements.
+
+(*NOTE: La première ligne du CSV représente le nom des colonnes, le reste ce sont les données.*)
 
 La page de l'horaire personnel doit contenir:
-- La liste des cours avec
-    - Sigle
-    - Nom complet
-    - Groupe théorique
-    - Groupe laboratoire
-    - Nombre de crédits
-- Horaire détaillé
-    - Mettez moi ça beau
+- Une grille de l'horaire des dates du festival (26-27 janvier)
+- Les événements choisis par l'utilisateur dans la grille
+    - Nom
+    - Date et heure
+    - Lieu
+    - Type
+- Lorsqu'on tappe sur un événement dans la grille, un popup contenant
+    - Nom, date, heure, lieu, type
+    - Description brève (vous pouvez l'inventer ou mettre un placeholder, on ne vous notera pas là dessus)
