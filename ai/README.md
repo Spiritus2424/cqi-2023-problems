@@ -2,11 +2,11 @@
 
 ## Mise en situation
 
-Votre supérieur amène son enfant au travail et vous demande de l'occuper pendant quelques heures. Il vous dit que son enfant est un grand fan du jeu de société **BATTLESHIP**. Vous n'êtes pas très à l'aise avec les enfants et vous n'aimez pas jouer à **BATTLESHIP**, mais vous adorez programmer. 
+Le PDG du Potato Cloud Fest dire qu'il veut trouver une façon d'occuper son enfant lorsqu'il l'amènera au travail pendant les semaines menant au festival. Il vous dit que son enfant est un grand fan du jeu de société **BATTLESHIP**. Vous n'êtes pas très à l'aise avec les enfants et vous n'aimez pas jouer à **BATTLESHIP**, mais vous adorez programmer. 
 
-Vous décidez donc de préparer une intelligence artificielle pour jouer contre son enfant. Il est très important d'avoir une intelligence artificielle capable de gagner rapidement sinon l'enfant découvrira la supercheri et vous dénonncera à son père!!
+Pour lui rendre un service tout en démontrant vos capacités de programmation, vous décidez de préparer une intelligence artificielle pour jouer contre son enfant. Il est très important d'avoir une intelligence artificielle capable de gagner rapidement sinon l'enfant découvrira la supercherie et son père devra à nouveau trouver une façon de l'occuper!
 
-## Logiciel
+## Logiciel Requis
 - Python 3.7+
 
 ## Règlement - Battleship pour les nuls
