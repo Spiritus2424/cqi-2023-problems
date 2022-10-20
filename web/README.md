@@ -1,27 +1,34 @@
-# Pré-CQI 2022 - Web (10 points)
+# Pré CQI 2023 - Design Web (10 points)
 
  *(for english, check README_EN.md in this folder)* 
 
 **NOTE**: Il y a des similarités avec le défi mobile, mais ce n'est pas 100% identique, portez attention.
-
 ## Mise en situation
 
-Le Potato Cloud Fest vous confie le mandat de rebâtir leur site web *from scratch*! C'est une ressource importante pour tous les gens qui veulent se renseigner sur le festival. On veut un beau design qui va convaincre ceux qui considèrent y aller de s'acheter un billet, et donner hâte à ceux qui ont déjà le leur.
+Le Potato Cloud Fest veut confier à une équipe le mandat de rebâtir leur site web *from scratch*! C'est une ressource importante pour tous les gens qui veulent se renseigner sur le festival. On veut un beau design qui va convaincre ceux qui considèrent y aller de s'acheter un billet, et donner hâte à ceux qui ont déjà le leur.
 
+Vous devez construire un site pour leur montrer vos talents en design web.
 
-## Technologie
+## Logiciel Requis
 
-Vous êtes libre d'utiliser les technologies que vous désirez. On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
+Il n'y a pas de logiciel obligatoire, vous êtes libres d'utiliser les technologies que vous désirez (par exemple Angular, React, Vue, ...).
 
-[todo] suggerer des frameworks?
+On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
 
-## Page principale (2 points)
+## Remise
+
+1. Vous devrez faire une démo de votre site web aux juges (donc leur montrer chaque partie détaillée plus bas)
+2. Vous devez remettre des screenshots de votre design
+3. Vous devez remettre une copie de votre code source
+
+## Instructions
+### **Page principale** (2 points)
 
 La page principale doit contenir:
 
 - Les dates du festival (26-27 janvier 2023)
-- Lieu du festival (todo ?)
-- Le logo du festival
+- Lieu du festival (Montréal)
+- Le logo du festival (votre choix)
 - Un menu avec ces différentes options*:
     - Billeterie
     - Programmation
@@ -30,11 +37,9 @@ La page principale doit contenir:
     - Nous joindre
 - Un décompte jusqu'au début de l'événement (26 janvier 2023)
 
-*Vous pouvez modifier le titre des sections pour les rendre plus courts/catchy, soyez créatif/ves!
+### **Page des tarifs/billeterie** (2 points)
 
-## Page des tarifs/billeterie (2 points)
-
-Cette page a pour but de montrer aux utilisateurs les différentes options de billets pour l'événement et d'ajouter une option à un panier d'achat. On ne vous demande pas d'implémenter la section pour compléter l'achat.
+Cette page a pour but de montrer aux utilisateurs les différentes options de billets pour l'événement et d'ajouter un billet à un panier d'achat. On ne vous demande pas d'implémenter la section pour compléter l'achat.
 
 Les types de billets disponibles sont dans `tickets.json`.
 
@@ -45,9 +50,8 @@ La page des tarifs doit contenir:
     - Description
     - Bouton pour ajouter au panier
 - Panier d'achat qui contient les éléments ajoutés
-    - Note: pas besoin de l'intégrer au menu comme la plupart des sites, il peut être seulement sur cette page-là
 
-## Page de la programmation (3 points)
+### **Page de la programmation** (3 points)
 
 Cette page permet aux visiteurs du site de consulter l'horaire complet.
 
@@ -62,11 +66,12 @@ La page de la programmation doit contenir:
     - Date et heure
     - Lieu
     - Type
-- Lorsqu'on clique sur un événement dans la grille, un popup contenant
+- Lorsqu'on clique sur un événement dans la grille, une façon de visualiser (section qui *expand*, dialog, popup, popover, etc)
     - Nom, date, heure, lieu, type
     - Description brève (vous pouvez l'inventer ou mettre un placeholder, on ne vous notera pas là dessus)
 
-## Page FAQ (2 points)
+### **Page FAQ** (2 points)
+La page FAQ, comme son nom le dit, sert à répondre aux questions des utilisateurs. Le design doit permettre de rapidement trouver une question et accéder à sa réponse.
 
 La page FAQ doit contenir:
 - Minimum 10 questions (total) séparées en 3 sections
@@ -78,7 +83,7 @@ La page FAQ doit contenir:
 
 Vous pouvez inventer les questions, réponses et sections. Vous ne serez pas notés sur le contenu.
 
-## Page Nous joindre (1 point)
+### **Page Nous joindre** (1 point)
 
 La page Nous joindre doit montrer aux visiteurs du site les différentes option pour contacters le comité organisateur du festival.
 
@@ -92,3 +97,4 @@ La page Nous joindre doit contenir:
     - Input pour courriel
     - Input pour téléphone
     - Input pour message
+    - Bouton envoyer (pas fonctionnel)

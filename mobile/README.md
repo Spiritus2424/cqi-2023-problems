@@ -1,4 +1,4 @@
-# Pré-CQI 2022 - Mobile (10 points)
+# Pré-CQI 2023 - Design Mobile (10 points)
 
  *(for english, check README_EN.md in this folder)*
 
@@ -6,15 +6,25 @@
  
 ## Mise en situation
 
-Le Potato Cloud Fest vous confie le mandat de créer une app pour améliorer l'expérience de ses festivalier.e.s! C'est une plateforme où les clients pourront se créer un compte, consulter les infos sur l'événement, bâtir un horaire de ce à quoi ils veulents assister, etc.
+Le Potato Cloud Fest veut savoir si vous êtes la bonne équipe pour bâtir une app qui améliorera l'expérience de ses festivalier.e.s! C'est une plateforme où les clients pourront se créer un compte, consulter les infos sur l'événement, bâtir un horaire de ce à quoi ils veulent assister, etc.
 
-## Technologie
+Vous créez donc une version *lite* de l'application pour leur montrer vos *skills* de mobile.
 
-Vous devez développer l'application avec un SDK natif, donc iOS ou Android (pas de React Native ou équivalent). Vous devez pouvoir faire une démo à la fin (sur un simulateur ou un téléphone).
+## Logiciel Requis
+
+Il n'y a pas de logiciel requis pour ce défi, mais vous devez développer l'application avec un SDK natif, donc iOS ou Android (pas de React Native ou équivalent).
+
+Vous devez pouvoir faire une démo à la fin (sur un simulateur ou un téléphone).
 
 On vous demande seulement de faire la partie *frontend*, vous pouvez donc *hardcoder* vos données directement dans votre code.
 
-## Authentification (2 points)
+## Remise
+1. Vous devrez faire une démo de votre application aux juges (donc leur montrer chaque partie détaillée plus bas)
+2. Vous devez remettre des screenshots de votre design
+3. Vous devez remettre une copie de votre code source
+
+## Instructions
+### **Authentification** (2 points)
 
 La page d'authentification doit minimalement contenir:
 - Le logo du festival (à votre discrétion!)
@@ -24,12 +34,12 @@ La page d'authentification doit minimalement contenir:
     - Créer un compte
     - Mot de passe oublié
 
-## Page d'accueil (2 points)
+### **Page d'accueil** (2 points)
 
 La page d'accueil doit contenir:
 
 - Les dates du festival (26-27 janvier 2023)
-- Lieu du festival (todo ?)
+- Lieu du festival (Montréal)
 - Le logo du festival
 - Un navbar avec les différentes options de menu:
     - Renseignements personnels
@@ -39,7 +49,7 @@ La page d'accueil doit contenir:
     - Nous joindre
 - Un décompte jusqu'au début de l'événement (26 janvier 2023)
 
-## Page des renseignements personnels (2 points)
+### **Page des renseignements personnels** (2 points)
 
 Cette page permet aux festivalier.e.s d'entrer leurs renseignements et leurs préférences. Ces infos peuvent ensuite être utilisées pour gérer des urgences, des objets perdus, des concours, etc.
 
@@ -66,14 +76,14 @@ La page des renseignements personnels doit contenir:
     - Problèmes de santé connus
     - Médicaments
 - Section permettant la modification de ses préférences
-    - Fréquence des courriels d'info
+    - Fréquence des courriels promo
         - Jamais, 1/mois, 1/semaine, 1/jour 
     - Grandeur de tshirt
 - Bouton pour sauvegarder
 
-## Page de l'horaire personnalisé (4 points)
+### **Page de l'horaire personnalisé** (4 points)
 
-Cette page permet aux participant.e.s de consulter l'horaire qu'ils auront bâti à partir de la programmation complète. En d'autres mots, imaginez que l'utilisateur peut consulter la programmation entière et sélectionner des événements pour se créer un aide-mémoire d'où aller, quand. Vous n'avez *pas* à faire la partie de la programmation, juste l'horaire personnalisé.
+Cette page permet aux participant.e.s de consulter l'horaire qu'ils auront bâti à partir de la programmation complète. En d'autres mots, imaginez que l'utilisateur peut consulter la programmation entière et sélectionner des événements pour se créer un aide-mémoire d'où aller, quand. Vous n'avez *pas* à faire la partie de la programmation, juste montrer l'horaire personnalisé.
 
 Les événements qui composeront l'horaire sont donnés dans `schedule.csv`. Vous pouvez *parse* les données comme vous voulez (si ça vous tente de recopier à la main vous pouvez aussi), pas besoin de traduire les lieu et types d'événements.
 
