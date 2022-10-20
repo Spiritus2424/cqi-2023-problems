@@ -1,8 +1,8 @@
-# Pré CQI 2023 - Système d'exploitation (10 points)
+# Pré CQI 2023 - Système d'exploitation - 10 pts
 
 ## Mise en situation
 
-Vous travailler dans une firme qui produit un logiciel de montage vidéo. Votre application fonctionne super bien, mais vos utilisateurs remarques que certain traitement prenne énormément de temps. Vous décidez donc d'utiliser les ressources actuelles des ordinateurs et d'essayer de paralléliser le traitement sur les différents coeurs disponibles sur le CPU.
+Le défi de Système d'Exploitation sert a évaluer vos compétences sur les concepts de Systemes d'Exploitation, plus particulièrement, le parallelisme. Vous aurez à accélérer l'execution d'un programme de montage video à l'aide de parallelisme.
 
 ## Logiciel Requis
 - Linux
@@ -14,6 +14,7 @@ Vous travailler dans une firme qui produit un logiciel de montage vidéo. Votre 
 
 ## Remise
 1. Utiliser la commande `make remise`
+2. Soumettre le fichier `remise.zip`
 
 ## Code fournit
 * `source/main.c`
