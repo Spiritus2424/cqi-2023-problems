@@ -28,3 +28,7 @@ Votre mandat est de résoudre le plus grand nombre de problème dans un lapse de
 * [Sécurité Informatique](./reverse)
 * [Software](./software)
 * [Design Web](./web)
+
+
+## Note
+La forme masculine employée dans ce *repo* a valeur de genre neutre. Elle est utilisée pour alléger le texte et en faciliter la lecture.
