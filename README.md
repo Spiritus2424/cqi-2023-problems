@@ -1,3 +1,10 @@
+# NOTE IMPORTANTE
+Ceci est le repo pour les organisateurs, évaluateurs ou juges de la compétition de programmation pour la pré-CQI.
+
+Dans chaque dossier, vous trouverez un fichier nommé CORRECTION.md qui contient des instructions sur comment évaluer ce problème.
+
+Certaines des questions demandent aux participants de soumettre leur code. On recommande de les faire ajouter leur code dans leur copie de ce repo. Vous pouvez leur demander de vous envoyer le zip par courriel, ou vous pouvez créer un Google form pour qu'ils le soumettent.
+
 # Pré CQI 2023
 (*NOTE* for English check README_EN.md)
 ## Mise en situation

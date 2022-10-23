@@ -1,3 +1,10 @@
+# IMPORTANT NOTE
+This is the repo for people organizing, evaluating or judging the Pre-QEC programming competition. 
+
+In each subfolder, you will find a file called CORRECTION_EN.md with instructions on how to evaluate that problem.
+
+Some of the questions require that participants submit their code. We recommend having them add their source code in their copy of this repo. You can then ask them to email the zip to you, or create a Google form where they can submit it.
+
 # Pré CQI - Pre QEC 2023
 
 ## Scenario
