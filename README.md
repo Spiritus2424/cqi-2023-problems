@@ -11,21 +11,19 @@ L’employeur explicite dans l’appel d’offre que les répondants devront mon
 
 Votre mandat est de résoudre le plus grand nombre de problème dans un lapse de temps donné et accumuler un meilleur score que vos compétiteurs. 
 
-## Instructions
+## Mise en situation
 
-* Vous devez mettre vos réponses dans le Google Form.
-* Ne cherchez pas à faire toutes les catégories, c'est impossible.
-* En cas de doute, vous avez le droit de poser des questions.
-* Vous n'avez pas le droit de briser l'infrastructure.
+L'entreprise PotatoCloudFest se prépare à créer leur nouvel édition du festival Potato Cloud Fest. Pour se faire, l'entreprise recherche une compagnie pour l'aider a créer et maintenir leur divers systèmes nécessaires pour faire fonctionner un festival. Vous faites partie d'une entreprise qui veut offrir leur services à PotatoCloudFest. A fin de considérer votre application, PotatoCloudFest exige un examen pour évaluer les compétences de votre entreprise.
 
 ## Catégories
+L'éxamen se comporte de 8 défis. Chaque défi a une explication plus en détail dans le dossier correspondant.
 
 * [Intelligence Artificielle](./ai)
 * [Debogage](./debug)
 * [DevOps](./devops)
 * [Design Mobile](./mobile)
 * [Système d'Exploitation](./operating-system)
-* [Sécurité Informatique](./reverse)
+* [Rétro Inginérie](./reverse)
 * [Software](./software)
 * [Design Web](./web)
 
