@@ -1,13 +1,8 @@
 # Pre CQI 2023 - DevOps (10 points)
 
-## Scenario
+## Context
 
-You encounter several problems when deploying your application:
-- Production environment is not identical to development environment
-- The steps for the deployment are exhaustive and prone to error
-- It is difficult and long to configure its development environment with all the components
-
-This is why your team decides to integrate DevOps notions into your project using Docker. Your next release is in a few hours and your team would be so proud of you if you manage to automate the deployment of the application.
+The DevOps challenge serves to evaluate your competencies about the usage od Docker and DevOps concepts.
 
 ## Installing Docker
 

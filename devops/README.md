@@ -1,13 +1,8 @@
-# Pré CQI 2023 - DevOps (10 points)
+# Pré CQI 2023 - DevOps - 10 pts
 
 ## Mise en situation
 
-Vous rencontrez plusieurs problèmes lors des déploiements de votre application:
-- Environnement de production n'est pas identique à celui du développement 
-- Les étapes pour le déploiement est exhaustive et prone à l'erreur
-- Il est difficile et long de configurer son environnement de développement avec toutes les composantes
-
-C'est pour cela que votre équipe décide d'intégrer des notions de DevOps à votre projet à l'aide de Docker. Votre prochaine release est dans quelques heures et votre équipe serait tellement fière de vous si vous arrivez à automatiser le déploiement de l'application.
+Le défi de DevOps cert a évaluer vos compétences reliés à l'utilisation de Docker et des concepts de DevOps
 
 ## Installation de Docker
 

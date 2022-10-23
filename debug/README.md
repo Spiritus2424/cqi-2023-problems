@@ -1,15 +1,17 @@
-# Pre CQI 2023
-English will follow
+# Pré CQI 2023 - Déboguage - 10 pts
 
-## Défi de déboguage
+## Mise en situation
 
-Tout système aura un jour des bogues. Ce défi cert a évaluer vos capacités a déboguer une application. Vous aurez a déboguer une aplication de karaoke. 
+Le défi de déboguage cert a évaluer vos compétences a déboguer une application éxistante. Vous aurez a déboguer une application de karaoke.
 
-## Pré-requis
+## Logiciel Requis
 
  * Votre système peut être de n'importequel système d'exploitation, parcontre nous suggérons **Linux**. Toute fois, vous aurez besoin des programmes suivantes: 
    * Un compilateur C++ par exemple: **gcc**, **clang**, **MSVC (Visual Studio)**
    * **cmake**
+
+## Remise
+Vous devez remettre une archive avec les fichiers dans `debug/`
 
 ## Instructions
 
@@ -32,42 +34,3 @@ cmake --build .
 # Dans le dossier build
 ./test/karaoke_test
 ```
-
-## Remise
-Vous devez remettre une archive avec les fichiers dans `src/`
-
----
-
-## Debugging Challenfe
-
-All systems will one day have bugs. This challenge serves to evaluate your debugging skills. You will have to debug a karaoke app.
-
-## Prerequisites
-* Your system may run any operating system you like. However we suggest **Linux**. Either way, you will need the following programs:
-  * A c++ compiler, for example: **gcc**, **clang**, **MSCV (Visual Studio)**
-  * **cmake**
-
- ## Instructions
-
-* You must fix the code located in `src` to make it compile and pass the tests
-* The `CMakeLists.txt` file do not contain any errors and must not be modified.
-* The tests located in `tests/` do not contain any errors and must not be modified. All compilation errors and test errors must be fixed by modifying the code in `sec/`
-
-## Compiling and running tests
-
-### Compilation
-```shell script
-mkdir build
-cd build
-cmake ..
-cmake --build .
-```
-
-### Running the tests
-```shell script
-# In the build directory
-./test/karaoke_test
-```
-
-## Delivery
-You must deliver an archive containing the files in `src/`
