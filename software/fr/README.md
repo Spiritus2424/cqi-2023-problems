@@ -1,11 +1,13 @@
-# Pre-CQI 2023 - Software Engineering (10 points)
+# Pré-CQI 2023 - Ingénierie logicielle (10 points)
 
-## Scenario
+## Mise en situation
 
-What is the difference between a software engineer and a computer engineer? The 1 Million question to which no one in this universe has managed to answer it without falling into a debate to either finish what is better between software engineering and computer engineering. It's finally time to put an end to this debate: Software Engineering is the winner of course.
+Vous devez démontrer aux responsables du Potato Cloud Fest que vous êtes des bons ingénieurs logiciels. C'est quoi la différence entre un ingénieur logiciel et informatique? La question à 1 Millions auquelle personne dans cette univers à réussi à répondre sans être tombé dans un débat à n'en plus finir: qu'est-ce qui est mieux entre génie logiciel et génie informatique. Il est finalement temps de mettre terme à ce débat: Génie Logiciel est le vainqueur bien sûr.
 
-It's time to show the computer genius the chasm that separates us!! For this you will have to answer theoretical questions.
+Il est temps de montrer au génie informatique le gouffre qui nous sépare!! Pour cela vous allez devoir répondre à des questions théoriques.	
 
-## Precision
 
-Questions are found in `question-<#>` folders and each folder has a `question.md` file and an `answer.md` file. You must fill in your answers in the `answer.md` file and include it in your submission.
+## Précision
+
+
+Les questions se retrouve dans les dossiers `question-<#>` et chaque dossier possède un fichier `question.md` et un fichier `answer.md`. Vous devez remplir vos réponses dans le fichier `answer.md` et l'inclure dans votre soumission.
